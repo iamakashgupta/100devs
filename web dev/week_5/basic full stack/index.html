@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        function handleClick(){
+            console.log("hello server");
+            
+            axios.post("https://localhost:3000/sum", {
+                const a : document.getElementById("a").value;
+                const b : document.getElementById("b").value;
+            })
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="a" placeholder="enter the value a ">
+    <input type="text" id="b" placeholder="enter the value b ">
+
+    <button onclick="handleClick()">sum</button>
+</body>
+</html>
